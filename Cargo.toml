@@ -1,0 +1,23 @@
+[package]
+name = "uics"
+version = "0.0.1"
+authors = ["rellfy <lorenzo@nioel.com>"]
+license = "MIT"
+edition = "2018"
+repository = "https://github.com/rellfy/uics"
+description = """
+UI library for WASM
+"""
+readme="README.md"
+
+[lib]
+crate-type = ["rlib"]
+path = "src/lib.rs"
+
+[[example]]
+name = "main"
+path = "examples/main.rs"
+
+[dependencies]
+oxid = "0.0.1"
+nalgebra = "0.21.1"
